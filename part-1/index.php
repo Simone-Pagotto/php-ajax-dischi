@@ -27,7 +27,8 @@
                     <span class='year'><?=$album['year']; ?></span>
                  </div>
                  
-            <?php};
+            <?php 
+            }
             ?>
         
         </div>
