@@ -17,17 +17,20 @@
         </div>
     </header>
     <main>
+        <div class="cds-container container">
         <?php
-            foreach($database['response'] as $album){
-                echo "<div class='cd'>";
-                    echo "<img :src='" . $album['poster'] . "' alt='copertina album'>";
-                    echo "<h3>" . $album['title'] . "</h3>";
-                    echo "<span class='author'>" . $album['author'] . "</span>";
-                    echo "<span class='year'>" . $album['year'] . "</span>";
-                 echo "</div>";
+            foreach($database['response'] as $album){?>
+                <div class='cd'>
+                    <img :src='<?= $album['poster'];?> alt='copertina album'>
+                    <h3><?= $album['title']; ?></h3>
+                    <span class='author'><?= $album['author']; ?></span>
+                    <span class='year'><?=$album['year']; ?></span>
+                 </div>
                  
-            };
-        ?>
+            <?php};
+            ?>
+        
+        </div>
     </main>
     
 </body>
