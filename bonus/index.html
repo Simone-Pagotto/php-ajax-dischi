@@ -24,22 +24,22 @@
 
 
             <!-- Disco ad esempio -->
-            <template v-if="selected.length === 0">
+           <!--  <template v-if="selected.length === 0"> -->
                     <div class="cd" v-for="cd in cds">
                         <img :src="cd.poster" alt="copertina album">
                         <h3>{{cd.title}}</h3>
                         <span class="author">{{cd.author}}</span>
                         <span class="year">{{cd.year}}</span>
                     </div>
-            </template>
-            <template v-else>
+           a
+            <!-- <template v-else>
                     <div class="cd" v-for="cd in filteredCds">
                         <img :src="cd.poster" alt="copertina album">
                         <h3>{{cd.title}}</h3>
                         <span class="author">{{cd.author}}</span>
                         <span class="year">{{cd.year}}</span>
                     </div>
-            </template>
+            </template> -->
             
         </div>
         

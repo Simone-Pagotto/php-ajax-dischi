@@ -32,7 +32,6 @@ const myDischi = new Vue ({
 			axios
 				.get("http://localhost/php-ajax-dischi/part-2/server.php?filter=" + this.textFilter)
 				.then((result) => {
-					/* console.log("http://localhost/php-ajax-dischi/part-2/server.php?filter=" + this.textFilter); */
 					for (let i = 0; i < result.data.response.length; i++) {
 						console.log(result.data.response[i]);
 						this.cds.push(result.data.response[i]);
